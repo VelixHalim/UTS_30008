@@ -27,7 +27,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                if(etUsername.getText().toString().equals("admin") && etPassword.getText().toString().equals("admin")){
+                if(etUsername.getText().toString().equals("uasmobile") && etPassword.getText().toString().equals("uasmobilegenap")){
                     AlertDialog.Builder builder = new AlertDialog.Builder(
                             Login.this
                     );
