@@ -57,13 +57,14 @@ public class ListLagu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_lagu);
 
-
-        SharedPreferences prefs = getSharedPreferences("prefs",MODE_PRIVATE);
-        boolean firstStart = prefs.getBoolean("firstStart",true);
+//dicomment shared dan boolean agar menjalankan showStartDialog yang akan munculkan pop up terus
+//        SharedPreferences prefs = getSharedPreferences("prefs",MODE_PRIVATE);
+//        boolean firstStart = prefs.getBoolean("firstStart",true);
         //popup hanya sekali muncul(pertama kali login saja)
-        if(firstStart){
+//        if(firstStart){
+        //jika if mati maka pop akan ada ketika login
             showStartDialog();
-        }
+//        }
 //list view
         if(ContextCompat.checkSelfPermission(ListLagu.this, Manifest.permission.READ_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED){
             if (ActivityCompat.shouldShowRequestPermissionRationale(ListLagu.this, Manifest.permission.READ_EXTERNAL_STORAGE)) {
@@ -272,10 +273,11 @@ public class ListLagu extends AppCompatActivity {
                     }
                 })
                 .create().show();
-        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putBoolean("firstStart", false);
-        editor.apply();
+        //di coment agar dapat popup terus
+//        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+//        SharedPreferences.Editor editor = prefs.edit();
+//        editor.putBoolean("firstStart", false);
+//        editor.apply();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
