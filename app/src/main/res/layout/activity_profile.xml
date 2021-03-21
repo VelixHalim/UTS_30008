@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person"
+            />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="25dp"
+            android:text="NIM : 00000030008" />
+
+        <TextView
+
+            android:layout_width="130dp"
+            android:layout_height="24dp"
+            android:text="Nama : Velix Halim" />
+
+        <TextView
+
+            android:layout_width="130dp"
+            android:layout_height="24dp"
+            android:text="Kelas : CL" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="24dp"
+            android:text="Referensi :"/>
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:text="Youtube : https://www.youtube.com/watch?v=74BMukDxEr8ab_channel=CodingWithEvan\n                  https://www.youtube.com/watch?v=fFPu7Q3icRklist=PLR2qQy0Zxs_Vqg0gtkB9TvSQYA_Je7Ldvab_channel=mtechviral\n                  https://www.youtube.com/watch?v=q7TETeyChhw\n                  https://www.youtube.com/watch?v=oh4YOj9VkVE\n\nTeman: Michael Roni\n              Dhammajoti\n              Nigel Chrispianius Felim"/>
+    </LinearLayout>
+
+</LinearLayout>
